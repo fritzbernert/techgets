@@ -26,12 +26,19 @@
   
 
     <div >
-      <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=fritz015-20&marketplace=amazon&amp;region=US&placement=B07ZPC9QD4&asins=B07ZPC9QD4&linkId=76d35464644d3c3cb57556fe8bec4b52&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=dddddd">
+      <iframe id="iframe" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=fritz015-20&marketplace=amazon&amp;region=US&placement=B07ZPC9QD4&asins=B07ZPC9QD4&linkId=76d35464644d3c3cb57556fe8bec4b52&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=dddddd">
       </iframe>
     </div>
 
-    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=fritz015-20&marketplace=amazon&amp;region=US&placement=B07ZPC9QD4&asins=B07ZPC9QD4&linkId=35d006adbbe1fac7ae8dbc38e151fdac&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=dddddd">
-    </iframe>
+    <script type="text/javascript">
+
+      if(document.getElementById("iframe") == null) {
+          alert("The ad has been removed!");
+      }else{
+          //alert("It's alright, it's still here.");
+      }
+      
+    </script>
 
 
 
