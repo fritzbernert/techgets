@@ -340,11 +340,11 @@ a:hover{
         height: 200px;
     
         display: grid; 
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr 1fr; 
         grid-template-rows: 1fr; 
         gap: 0px 0px; 
         grid-template-areas: 
-            "."; 
+            ". ."; 
     }
     .contentBox p{
         overflow: hidden;
@@ -357,66 +357,21 @@ a:hover{
         margin-left: 0;
         font-weight: bold;
     }
-
-    .itemBlock .content{
-        display: grid; 
-        grid-template-columns: 1fr; 
-        grid-template-rows: 1fr; 
-        gap: 0px 0px; 
-        grid-template-areas: 
-          "."; 
+    .contentBox .imgContainer{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        overflow: visible;
     }
-    .itemBlock img{
-        height: auto;
-        width: 80%;
-    
-        display: block;
-        margin: auto;
-    
-        border-radius: 5px;
-    }
-    .itemBlock a{ 
-        width: 80%;
-    
-        display: block;
-        margin: auto;
-    }
-
-    .tagSearch{
-        display: grid; 
-        grid-template-columns: 1fr; 
-        grid-template-rows: 1fr 1fr; 
-        gap: 0px 0px; 
-        grid-template-areas: 
-          "."
-          "."; 
-    }
-    .tagSearch .tagContent{
-        grid-row: 2;
-    }
-    .tagSearch #tagList{
-        background-color: #EEEEEE;
-    
-        display: flex;
-        flex-wrap: wrap;
-    
-        padding: 15px;
-
-        grid-row: 1;
-    }
-
-    .modal-content {
-        background-color: #fefefe;
-        margin: 15% auto; /* 15% from the top and centered */
-        padding: 20px;
-        border: 1px solid #888;
-        width: 90%;
-    }
-    .modal-form #emailInput{
+    .contentBox img{
         width: 100%;
+        height: auto;
+    
+    
         border-radius: 5px;
-        margin: 10px;
+        overflow: visible;
     }
+
 
     footer {
         display: grid; 
