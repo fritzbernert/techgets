@@ -158,57 +158,6 @@ h1{
 }
 
 
-.itemBlock{
-    border-radius: 5px;
-    background-color: #EEEEEE;
-    margin: 0;
-    margin-top: 15px;
-    margin-bottom: 50px;
-
-    box-shadow: 2px 2px 3px #111111;
-
-    padding: 30px;
-}
-.itemBlock .content{
-    display: grid; 
-    grid-template-columns: 1.2fr 0.8fr; 
-    grid-template-rows: 1fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-      ". ."; 
-}
-.itemBlock h2{
-    font-size: 40px;
-    margin-left: 0;
-    font-weight: bold;
-}
-.itemBlock p{
-    width: 80%;
-
-    margin-top: 20px;
-    font-size: 50px;
-    font-weight: bold;
-}
-.itemBlock img{
-    height: auto;
-    width: 80%;
-
-    display: block;
-    margin-right: 10px;
-    margin-left: auto;
-
-    border-radius: 5px;
-}
-.itemBlock a{ 
-    width: 80%;
-
-    display: block;
-    margin: 10px;
-    margin-left: auto;
-
-}
-
-
 
 .title{
     width: fit-content;
@@ -340,7 +289,7 @@ a:hover{
         height: 200px;
     
         display: grid; 
-        grid-template-columns: 1fr 1fr; 
+        grid-template-columns: 0.8fr 1.2fr; 
         grid-template-rows: 1fr; 
         gap: 0px 0px; 
         grid-template-areas: 
@@ -351,11 +300,21 @@ a:hover{
         display: -webkit-box;
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
+        
+        margin-left: 20px;
+        margin-top: 0px;
+        margin: 0px 10px;
+    }
+    .contentBox p.prime{     
+        margin: 0px;
+        margin-left: 10px;
     }
     .contentBox span{
         font-size: 20px;
         margin-left: 0;
         font-weight: bold;
+
+        
     }
     .contentBox .imgContainer{
         display:flex;
@@ -366,7 +325,6 @@ a:hover{
     .contentBox img{
         width: 100%;
         height: auto;
-    
     
         border-radius: 5px;
         overflow: visible;
