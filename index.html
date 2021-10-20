@@ -11,8 +11,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@100&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
-    
-    <meta name="p:domain_verify" content="6a1cc837286d1d91e6e72ae5847b4df0"/>
 
     <link rel="icon" href="images/favicon.ico">
 
@@ -25,689 +23,100 @@
       <div class="container-fluid">
         
         <h1>TechGets!</h1>
+        
 
-        <a href="http://instagram.com/techgets_" rel="noopener noreferrer" target="_blank"><img src="images/2561453_instagram_icon.png" alt="" width="30px"></a>
+        <div class="searchBar input-group mb-3">
+          <input id="input" type="text" class="form-control" placeholder="Search..." aria-describedby="button-addon2">
+          <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="findString()">Search</button>
+        </div>
 
-        <!--<div>
-          <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+        <a class="instagramIcon" href="http://instagram.com/techgetz" rel="noopener noreferrer" target="_blank"><img src="images/2561453_instagram_icon.png" alt="" width="30px"></a>
 
-          <ul id="myUL">
-            <li><a href="#wyze_cam">WYZE Cam</a></li>
-            <li><a href="#amazon_smart_plug">Amazon Smart Plug</a></li>
-          
-            <li><a href="#usb_wall_charger">USB Wall Charger</a></li>
-            <li><a href="#">Bob</a></li>
-          
-            <li><a href="#">Calvin</a></li>
-            <li><a href="#">Christina</a></li>
-            <li><a href="#">Cindy</a></li>
-            <li><a href="#">bacilli</a></li>
-          </ul> 
-        </div>-->
 
       </div>
     </nav>
-  
+
+    
+    <button onclick="topFunction()" id="topBtn" title="Go to top">▲</button> 
+
+    <script>
+      function findString() {
+        let text = document.getElementById("input").value;
+        window.find(text);
+      }
+
+      mybutton = document.getElementById("topBtn");
+
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0; 
+      } 
+    </script>
 
     <div class="content">
-      <a href="https://amzn.to/3k7UbkB" rel="noopener noreferrer" target="_blank">
-        <div class="contentBox">
-          <div>
-            <span id="001">50ft Led Lights</span>
-            <p> 
-              $14.67
-            </p>
-            <p class="prime"></p>
-          </div>
-          <div class="imgContainer">
-            <img src="images/001.webp">
-          </div>
-        </div>
-      </a>
 
-      <a href="https://amzn.to/3C5rFWT" rel="noopener noreferrer" target="_blank">
-        <div class="contentBox">
-          <div>
-            <span id="002">Amazon Smart Plug</span>
-            <p> 
-              $15.99
-            </p>
-            <p class="prime">✔️ Prime</p>
-          </div>
-          <div class="imgContainer">
-            <img src= "images/002.webp">
-          </div>
-        </div>
-      </a>
+      <a id='001' href=https://amzn.to/3k7UbkB rel='noopener noreferrer' target='blank'> <div class='contentBox'> <div> <span>50ft Led Lights</span> <p> $14.67</p><p class='prime'> </p></div><div class='imgContainer'><img src='images/001.jpg'></div></div></a>
+      <a id='002' href=https://amzn.to/3C5rFWT rel='noopener noreferrer' target='blank'> <div class='contentBox'> <div> <span>Amazon Smart Plug</span> <p> $15.99</p><p class='prime'>✔️ Prime</p></div><div class='imgContainer'><img src='images/002.jpg'></div></div></a>
+      <a id='003' href=https://amzn.to/3nmgepu rel='noopener noreferrer' target='blank'> <div class='contentBox'> <div> <span>WYZE Cam</span> <p> $35.99</p><p class='prime'>✔️ Prime</p></div><div class='imgContainer'><img src='images/003.jpg'></div></div></a>
+      <a id='004' href=https://amzn.to/3z6wbCq rel='noopener noreferrer' target='blank'> <div class='contentBox'> <div> <span>Echo Dot (3rd Gen)</span> <p> $35.99</p><p class='prime'>✔️ Prime</p></div><div class='imgContainer'><img src='images/004.jpg'></div></div></a>
+      <a id='005' href=https://amzn.to/3A4tWRx rel='noopener noreferrer' target='blank'> <div class='contentBox'> <div> <span>Tripod Ring Light</span> <p> $29.73</p><p class='prime'>✔️ Prime</p></div><div class='imgContainer'><img src='images/005.jpg'></div></div></a>
+      <a id='006' href=https://amzn.to/2VvRCPy rel='noopener noreferrer' target='blank'> <div class='contentBox'> <div> <span>RGB Sound Bar</span> <p> $49.99</p><p class='prime'>✔️ Prime</p></div><div class='imgContainer'><img src='images/006.jpg'></div></div></a>
+      <a id='007' href=https://amzn.to/3njZ2B7 rel='noopener noreferrer' target='blank'> <div class='contentBox'> <div> <span>Razer Kraken Gaming Headset</span> <p> $35.99</p><p class='prime'>✔️ Prime</p></div><div class='imgContainer'><img src='images/007.jpg'></div></div></a>
+      <a id='008' href=https://amzn.to/2YLzD9c rel='noopener noreferrer' target='blank'> <div class='contentBox'> <div> <span>USB Wall Charger</span> <p> $15.99</p><p class='prime'>✔️ Prime</p></div><div class='imgContainer'><img src='images/008.jpg'></div></div></a>
+      <a id='009' href=https://amzn.to/3E8hPp2 rel='noopener noreferrer' target='blank'> <div class='contentBox'> <div> <span>Wireless Portable Charger</span> <p> $27.95</p><p class='prime'>✔️ Prime</p></div><div class='imgContainer'><img src='images/009.jpg'></div></div></a>
+      <a id='010' href=https://amzn.to/38WuVHo rel='noopener noreferrer' target='blank'> <div class='contentBox'> <div> <span>7 Port USB Data Hub</span> <p> $28.99</p><p class='prime'>✔️ Prime</p></div><div class='imgContainer'><img src='images/010.jpg'></div></div></a>
+      <a id='011' href=https://amzn.to/2YNyIVL rel='noopener noreferrer' target='blank'> <div class='contentBox'> <div> <span>Angle 3 Bluetooth Speaker</span> <p> $25.99</p><p class='prime'>✔️ Prime</p></div><div class='imgContainer'><img src='images/011.jpg'></div></div></a>
+      <a id='012' href=https://amzn.to/3C0bDNS rel='noopener noreferrer' target='blank'> <div class='contentBox'> <div> <span>WiFi Mini Projector</span> <p> $119.98</p><p class='prime'>✔️ Prime</p></div><div class='imgContainer'><img src='images/012.jpg'></div></div></a>
+      <a id='013' href=https://amzn.to/2XiqmFa rel='noopener noreferrer' target='blank'> <div class='contentBox'> <div> <span>Tile Slim Bluetooth Tracker</span> <p> $27.99</p><p class='prime'>✔️ Prime</p></div><div class='imgContainer'><img src='images/013.jpg'></div></div></a>
+      <a id='014' href=https://amzn.to/3z75s8E rel='noopener noreferrer' target='blank'> <div class='contentBox'> <div> <span>USB C Hub 6 In 1</span> <p> $29.99</p><p class='prime'>✔️ Prime</p></div><div class='imgContainer'><img src='images/014.jpg'></div></div></a>
+      <a id='015' href=https://amzn.to/3C0mJCq rel='noopener noreferrer' target='blank'> <div class='contentBox'> <div> <span>Tile Pro Bluetooth Tracker</span> <p> $34.99</p><p class='prime'>✔️ Prime</p></div><div class='imgContainer'><img src='images/015.jpg'></div></div></a>
+      <a id='016' href=https://amzn.to/3E9JWE5 rel='noopener noreferrer' target='blank'> <div class='contentBox'> <div> <span>Laptop Cooler Cooling Pad</span> <p> $29.99</p><p class='prime'>✔️ Prime</p></div><div class='imgContainer'><img src='images/016.jpg'></div></div></a>
+      <a id='017' href=https://amzn.to/3lhvGR1 rel='noopener noreferrer' target='blank'> <div class='contentBox'> <div> <span>North Face Backpack</span> <p> $78.95</p><p class='prime'> </p></div><div class='imgContainer'><img src='images/017.jpg'></div></div></a>
+      <a id='018' href=https://amzn.to/3kafjGz rel='noopener noreferrer' target='blank'> <div class='contentBox'> <div> <span>Adjustable Laptop Bed Table</span> <p> $64.99</p><p class='prime'>  </p></div><div class='imgContainer'><img src='images/018.jpg'></div></div></a>
+      <a id='019' href=https://amzn.to/3lz5fqi rel='noopener noreferrer' target='blank'> <div class='contentBox'> <div> <span>Razer DeathAdder Gaming Mouse</span> <p> $22.99</p><p class='prime'>✔️ Prime</p></div><div class='imgContainer'><img src='images/019.jpg'></div></div></a>
+      <a id='020' href=https://amzn.to/3klU0Ci rel='noopener noreferrer' target='blank'> <div class='contentBox'> <div> <span>Logitech MK545 Keyboard Mouse</span> <p> $49.99</p><p class='prime'>✔️ Prime</p></div><div class='imgContainer'><img src='images/020.jpg'></div></div></a>
+      <a id='021' href=https://amzn.to/39eWyLZ rel='noopener noreferrer' target='blank'> <div class='contentBox'> <div> <span>Wireless Bluetooth Sunglasses</span> <p> $39.99</p><p class='prime'>✔️ Prime</p></div><div class='imgContainer'><img src='images/021.jpg'></div></div></a>
+      <a id='022' href=https://amzn.to/3CjYG1B rel='noopener noreferrer' target='blank'> <div class='contentBox'> <div> <span>Raycon Bluetooth Earbuds</span> <p> $79.99</p><p class='prime'>✔️ Prime</p></div><div class='imgContainer'><img src='images/022.jpg'></div></div></a>
+      <a id='023' href=https://amzn.to/3nV9KOD rel='noopener noreferrer' target='blank'> <div class='contentBox'> <div> <span>Fidget Strips</span> <p> $9.99</p><p class='prime'> </p></div><div class='imgContainer'><img src='images/023.jpg'></div></div></a>
+      <a id='024' href=https://amzn.to/3lJMkJf rel='noopener noreferrer' target='blank'> <div class='contentBox'> <div> <span>Temperature Control Smart Mug</span> <p> $129.95</p><p class='prime'>  </p></div><div class='imgContainer'><img src='images/024.jpg'></div></div></a>
+      <a id='025' href=https://amzn.to/2VVNB7g rel='noopener noreferrer' target='blank'> <div class='contentBox'> <div> <span>Razer Mobile Game Controller</span> <p> $54.99</p><p class='prime'>✔️ Prime</p></div><div class='imgContainer'><img src='images/025.jpg'></div></div></a>
+      <a id='026' href=https://amzn.to/3kq4mRp rel='noopener noreferrer' target='blank'> <div class='contentBox'> <div> <span>Star Projector</span> <p> $33.99</p><p class='prime'>✔️ Prime</p></div><div class='imgContainer'><img src='images/026.jpg'></div></div></a>
+      <a id='027' href=https://amzn.to/3AE0vWs rel='noopener noreferrer' target='blank'> <div class='contentBox'> <div> <span>Razer Bluetooth Earbuds</span> <p> $46.01</p><p class='prime'>✔️ Prime</p></div><div class='imgContainer'><img src='images/027.jpg'></div></div></a>
+      <a id='028' href=https://amzn.to/2XDbfqa rel='noopener noreferrer' target='blank'> <div class='contentBox'> <div> <span>Portable Handheld Color Scanner</span> <p> $94.99</p><p class='prime'>✔️ Prime</p></div><div class='imgContainer'><img src='images/028.jpg'></div></div></a>
+      <a id='029' href=https://amzn.to/3hRcLMa rel='noopener noreferrer' target='blank'> <div class='contentBox'> <div> <span>Typewriter Mechanical Keyboard</span> <p> $69.99</p><p class='prime'>✔️ Prime</p></div><div class='imgContainer'><img src='images/029.jpg'></div></div></a>
+      <a id='030' href=https://amzn.to/3tW99x3 rel='noopener noreferrer' target='blank'> <div class='contentBox'> <div> <span>BUGANI Bluetooth Speaker</span> <p> $59.99</p><p class='prime'>✔️ Prime</p></div><div class='imgContainer'><img src='images/030.jpg'></div></div></a>
+      <a id='031' href=https://amzn.to/3zrMQRh rel='noopener noreferrer' target='blank'> <div class='contentBox'> <div> <span>LARQ Self Cleaning Water Bottle</span> <p> $95.00 </p><p class='prime'>  </p></div><div class='imgContainer'><img src='images/031.jpg'></div></div></a>
+      <a id='032' href=https://amzn.to/3AvmI9a rel='noopener noreferrer' target='blank'> <div class='contentBox'> <div> <span>USB C Bracelet Charging Cable</span> <p> $14.99</p><p class='prime'>✔️ Prime</p></div><div class='imgContainer'><img src='images/032.jpg'></div></div></a>
+      <a id='033' href=https://amzn.to/2Yp5lck rel='noopener noreferrer' target='blank'> <div class='contentBox'> <div> <span>Retro Game Console</span> <p> $17.99</p><p class='prime'>✔️ Prime</p></div><div class='imgContainer'><img src='images/033.jpg'></div></div></a>
+      <a id='034' href=https://amzn.to/3uIikBA rel='noopener noreferrer' target='blank'> <div class='contentBox'> <div> <span>LED Bedside Lamp</span> <p> $19.99</p><p class='prime'>✔️ Prime</p></div><div class='imgContainer'><img src='images/034.jpg'></div></div></a>
+      <a id='035' href=https://amzn.to/3izwAaW rel='noopener noreferrer' target='blank'> <div class='contentBox'> <div> <span>Anker PowerCore+ Mini Powerbank</span> <p> $22.39</p><p class='prime'>✔️ Prime</p></div><div class='imgContainer'><img src='images/035.jpg'></div></div></a>
+      <a id='036' href=https://amzn.to/3mpvqQK rel='noopener noreferrer' target='blank'> <div class='contentBox'> <div> <span>Nanoleaf Shapes Triangles</span> <p> $179.99</p><p class='prime'>✔️ Prime</p></div><div class='imgContainer'><img src='images/036.jpg'></div></div></a>
+      <a id='037' href=https://amzn.to/3FhM4ub rel='noopener noreferrer' target='blank'> <div class='contentBox'> <div> <span>PlayStation Classic</span> <p> $69.95</p><p class='prime'>✔️ Prime</p></div><div class='imgContainer'><img src='images/037.jpg'></div></div></a>
+      <a id='038' href=https://amzn.to/300i1He rel='noopener noreferrer' target='blank'> <div class='contentBox'> <div> <span>LED Face Mask</span> <p> $89.00</p><p class='prime'>✔️ Prime</p></div><div class='imgContainer'><img src='images/038.jpg'></div></div></a>
+      <a id='039' href=https://amzn.to/3iAIIZl rel='noopener noreferrer' target='blank'> <div class='contentBox'> <div> <span>Minecraft Torch Night Light</span> <p> $21.57</p><p class='prime'>  </p></div><div class='imgContainer'><img src='images/039.jpg'></div></div></a>
+      <a id='040' href=https://amzn.to/3FcAD6S rel='noopener noreferrer' target='blank'> <div class='contentBox'> <div> <span>Oculus Quest 2</span> <p> $299.00</p><p class='prime'>✔️ Prime</p></div><div class='imgContainer'><img src='images/040.jpg'></div></div></a>
+      <a id='041' href=https://amzn.to/3pk4KUt rel='noopener noreferrer' target='blank'> <div class='contentBox'> <div> <span>Polaroid Go Instant Mini Camera</span> <p> $99.99</p><p class='prime'> </p></div><div class='imgContainer'><img src='images/041.jpg'></div></div></a>
+      <a id='042' href=https://amzn.to/3nc3HmP rel='noopener noreferrer' target='blank'> <div class='contentBox'> <div> <span>Blink Video Doorbell</span> <p> $49.99</p><p class='prime'>✔️ Prime</p></div><div class='imgContainer'><img src='images/042.jpg'></div></div></a>
+      <a id='043' href=https://amzn.to/3G4HU9n rel='noopener noreferrer' target='blank'> <div class='contentBox'> <div> <span>Bluetooth Shower Speaker</span> <p> $49.99</p><p class='prime'> </p></div><div class='imgContainer'><img src='images/043.jpg'></div></div></a>
+      <a id='044' href=https://amzn.to/3BZhNOA rel='noopener noreferrer' target='blank'> <div class='contentBox'> <div> <span>Mini AC and Humidifier Fan</span> <p> $99.99</p><p class='prime'> </p></div><div class='imgContainer'><img src='images/044.jpg'></div></div></a>
+      <a id='045' href=https://amzn.to/3nb5SHd rel='noopener noreferrer' target='blank'> <div class='contentBox'> <div> <span>Portable Neck Fan</span> <p> $45.99</p><p class='prime'> </p></div><div class='imgContainer'><img src='images/045.jpg'></div></div></a>
+      <a id='046' href=https://amzn.to/2Z6Kjz8 rel='noopener noreferrer' target='blank'> <div class='contentBox'> <div> <span>Keyless Bluetooth Padlock</span> <p> $79.99</p><p class='prime'> </p></div><div class='imgContainer'><img src='images/046.jpg'></div></div></a>
+      <a id='047' href=https://amzn.to/3jkAaX1 rel='noopener noreferrer' target='blank'> <div class='contentBox'> <div> <span>Wireless Charging Mouse&Mousepad</span> <p> $119.99</p><p class='prime'> </p></div><div class='imgContainer'><img src='images/047.jpg'></div></div></a>
+      <a id='048' href=https://amzn.to/3vtL7u6 rel='noopener noreferrer' target='blank'> <div class='contentBox'> <div> <span>Bluetooth Headphone Beanie</span> <p> $29.91</p><p class='prime'> </p></div><div class='imgContainer'><img src='images/048.jpg'></div></div></a>
 
-      <a href="https://amzn.to/3nmgepu" rel="noopener noreferrer" target="_blank">
-        <div class="contentBox">
-          <div>
-            <span id="003">WYZE Cam</span>
-            <p> 
-              $35.99
-            </p>
-            <p class="prime">✔️ Prime</p>
-          </div>
-          <div class="imgContainer">
-            <img src="images/003.webp">
-          </div>
-        </div>
-      </a>
-
-      <a href="https://amzn.to/3z6wbCq" rel="noopener noreferrer" target="_blank">
-        <div class="contentBox">
-          <div>
-            <span id="004">Echo Dot (3rd Gen)</span>
-            <p> 
-              $35.99
-            </p>
-            <p class="prime">✔️ Prime</p>
-          </div>
-          <div class="imgContainer">
-            <img src="images/004.webp">
-          </div>
-        </div>
-      </a>
-
-      <a href="https://amzn.to/3A4tWRx" rel="noopener noreferrer" target="_blank">
-        <div class="contentBox">
-          <div>
-            <span id="005">Tripod Ring Light</span>
-            <p> 
-              $29.73
-            </p>
-            <p class="prime">✔️ Prime</p>
-          </div>
-          <div class="imgContainer">
-            <img src="images/005.webp">
-          </div>
-        </div>
-      </a>
-
-      <a href="https://amzn.to/2VvRCPy" rel="noopener noreferrer" target="_blank">
-        <div class="contentBox">
-          <div>
-            <span id="006">RGB Sound Bar</span>
-            <p> 
-              $49.99
-            </p>
-            <p class="prime">✔️ Prime</p>
-          </div>
-          <div class="imgContainer">
-            <img src="images/006.webp">
-          </div>
-        </div>
-      </a>
-
-      <a href="https://amzn.to/3njZ2B7" rel="noopener noreferrer" target="_blank">
-        <div class="contentBox">
-          <div>
-            <span id="007">Razer Kraken Gaming Headset</span>
-            <p> 
-              $35.99
-            </p>
-            <p class="prime">✔️ Prime</p>
-          </div>
-          <div class="imgContainer">
-            <img src="images/007.webp">
-          </div>
-        </div>
-      </a>
-
-      <a href="https://amzn.to/2YLzD9c" rel="noopener noreferrer" target="_blank">
-        <div class="contentBox">
-          <div>
-            <span id="008">USB Wall Charger</span>
-            <p> 
-              $15.99
-            </p>
-            <p class="prime">✔️ Prime</p>
-
-          </div>
-          <div class="imgContainer">
-            <img src="images/008.webp">
-          </div>
-        </div>
-      </a>
-
-      <a href="https://amzn.to/3E8hPp2" rel="noopener noreferrer" target="_blank">
-        <div class="contentBox">
-          <div>
-            <span id="009">Wireless Portable Charger</span>
-            <p> 
-              $27.95
-            </p>
-            <p class="prime">✔️ Prime</p>
-
-          </div>
-          <div class="imgContainer">
-            <img src="images/009.webp">
-          </div>
-        </div>
-      </a>
-
-      <a href="https://amzn.to/38WuVHo" rel="noopener noreferrer" target="_blank">
-        <div class="contentBox">
-          <div>
-            <span id="010">7-Port USB Data Hub</span>
-            <p> 
-              $28.99
-            </p>
-            <p class="prime">✔️ Prime</p>
-
-          </div>
-          <div class="imgContainer">
-            <img src="images/010.jpg">
-          </div>
-        </div>
-      </a>
-
-      <a href="https://amzn.to/2YNyIVL" rel="noopener noreferrer" target="_blank">
-        <div class="contentBox">
-          <div>
-            <span id="011">Angle 3 Bluetooth Speaker</span>
-            <p> 
-              $25.99
-            </p>
-            <p class="prime">✔️ Prime</p>
-
-          </div>
-          <div class="imgContainer">
-            <img src="images/011.jpg">
-          </div>
-        </div>
-      </a>
-
-      <a href="https://amzn.to/3C0bDNS" rel="noopener noreferrer" target="_blank">
-        <div class="contentBox">
-          <div>
-            <span id="012">WiFi Mini Projector</span>
-            <p> 
-              $119.98
-            </p>
-            <p class="prime">✔️ Prime</p>
-
-          </div>
-          <div class="imgContainer">
-            <img src="images/012.jpg">
-          </div>
-        </div>
-      </a>
-
-      <a href="https://amzn.to/2XiqmFa" rel="noopener noreferrer" target="_blank">
-        <div class="contentBox">
-          <div>
-            <span id="013">Tile Slim Bluetooth Tracker</span>
-            <p> 
-              $27.99
-            </p>
-            <p class="prime">✔️ Prime</p>
-
-          </div>
-          <div class="imgContainer">
-            <img src="images/013.jpg">
-          </div>
-        </div>
-      </a>
-
-      <a href="https://amzn.to/3z75s8E" rel="noopener noreferrer" target="_blank">
-        <div class="contentBox">
-          <div>
-            <span id="014">USB C Hub 6 In 1</span>
-            <p> 
-              $29.99
-            </p>
-            <p class="prime">✔️ Prime</p>
-
-          </div>
-          <div class="imgContainer">
-            <img src="images/014.jpg">
-          </div>
-        </div>
-      </a>
-
-      <a href="https://amzn.to/3C0mJCq" rel="noopener noreferrer" target="_blank">
-        <div class="contentBox">
-          <div>
-            <span id="015">Tile Pro Bluetooth Tracker</span>
-            <p> 
-              $34.99
-            </p>
-            <p class="prime">✔️ Prime</p>
-
-          </div>
-          <div class="imgContainer">
-            <img src="images/015.jpg">
-          </div>
-        </div>
-      </a>
-
-      <a href="https://amzn.to/3E9JWE5" rel="noopener noreferrer" target="_blank">
-        <div class="contentBox">
-          <div>
-            <span id="016">Laptop Cooler Cooling Pad</span>
-            <p> 
-              $29.99
-            </p>
-            <p class="prime">✔️ Prime</p>
-
-          </div>
-          <div class="imgContainer">
-            <img src="images/016.jpg">
-          </div>
-        </div>
-      </a>
-
-      <a href="https://amzn.to/3lhvGR1" rel="noopener noreferrer" target="_blank">
-        <div class="contentBox">
-          <div>
-            <span id="017">North Face Backpack</span>
-            <p> 
-              $78.95
-            </p>
-            <p class="prime"></p>
-
-          </div>
-          <div class="imgContainer">
-            <img src="images/017.jpg">
-          </div>
-        </div>
-      </a>
-
-      <a href="https://amzn.to/3kafjGz" rel="noopener noreferrer" target="_blank">
-        <div class="contentBox">
-          <div>
-            <span id="018">Adjustable Laptop Bed Table</span>
-            <p> 
-              $64.99
-            </p>
-            <p class="prime"></p>
-
-          </div>
-          <div class="imgContainer">
-            <img src="images/018.jpg">
-          </div>
-        </div>
-      </a>
-
-      <a href="https://amzn.to/3lz5fqi" rel="noopener noreferrer" target="_blank">
-        <div class="contentBox">
-          <div>
-            <span id="019">Razer DeathAdder Gaming Mouse</span>
-            <p> 
-              $22.99
-            </p>
-            <p class="prime">✔️ Prime</p>
-
-          </div>
-          <div class="imgContainer">
-            <img src="images/019.jpg">
-          </div>
-        </div>
-      </a>
-
-      <a href="https://amzn.to/3klU0Ci" rel="noopener noreferrer" target="_blank">
-        <div class="contentBox">
-          <div>
-            <span id="020">Logitech MK545 Keyboard Mouse</span>
-            <p> 
-              $49.99
-            </p>
-            <p class="prime">✔️ Prime</p>
-
-          </div>
-          <div class="imgContainer">
-            <img src="images/020.jpg">
-          </div>
-        </div>
-      </a>
-
-      <a href="https://amzn.to/39eWyLZ" rel="noopener noreferrer" target="_blank">
-        <div class="contentBox">
-          <div>
-            <span id="021">Wireless Bluetooth Sunglasses</span>
-            <p> 
-              $39.99
-            </p>
-            <p class="prime">✔️ Prime</p>
-
-          </div>
-          <div class="imgContainer">
-            <img src="images/021.jpg">
-          </div>
-        </div>
-      </a>
-
-      <a href="https://amzn.to/3CjYG1B" rel="noopener noreferrer" target="_blank">
-        <div class="contentBox">
-          <div>
-            <span id="022">Raycon Bluetooth Earbuds</span>
-            <p> 
-              $79.99
-            </p>
-            <p class="prime">✔️ Prime</p>
-
-          </div>
-          <div class="imgContainer">
-            <img src="images/022.jpg">
-          </div>
-        </div>
-      </a>
-
-      <a href="https://amzn.to/3nV9KOD" rel="noopener noreferrer" target="_blank">
-        <div class="contentBox">
-          <div>
-            <span id="023">Fidget Strips</span>
-            <p> 
-              $9.99
-            </p>
-            <p class="prime"></p>
-
-          </div>
-          <div class="imgContainer">
-            <img src="images/023.jpg">
-          </div>
-        </div>
-      </a>
-
-      <a href="https://amzn.to/3lJMkJf" rel="noopener noreferrer" target="_blank">
-        <div class="contentBox">
-          <div>
-            <span id="024">Temperature Control Smart Mug</span>
-            <p> 
-              $129.95
-            </p>
-            <p class="prime"></p>
-
-          </div>
-          <div class="imgContainer">
-            <img src="images/024.jpg">
-          </div>
-        </div>
-      </a>
-
-      <a href="https://amzn.to/2VVNB7g" rel="noopener noreferrer" target="_blank">
-        <div class="contentBox">
-          <div>
-            <span id="025">Razer Mobile Game Controller</span>
-            <p> 
-              $54.99
-            </p>
-            <p class="prime">✔️ Prime</p>
-
-          </div>
-          <div class="imgContainer">
-            <img src="images/025.jpg">
-          </div>
-        </div>
-      </a>
-
-      <a href="https://amzn.to/3kq4mRp" rel="noopener noreferrer" target="_blank">
-        <div class="contentBox">
-          <div>
-            <span id="026">Star Projector</span>
-            <p> 
-              $33.99
-            </p>
-            <p class="prime">✔️ Prime</p>
-
-          </div>
-          <div class="imgContainer">
-            <img src="images/026.jpg">
-          </div>
-        </div>
-      </a>
-
-      <a href="https://amzn.to/3AE0vWs" rel="noopener noreferrer" target="_blank">
-        <div class="contentBox">
-          <div>
-            <span id="027">Razer Bluetooth Earbuds</span>
-            <p> 
-              $46.01
-            </p>
-            <p class="prime">✔️ Prime</p>
-
-          </div>
-          <div class="imgContainer">
-            <img src="images/027.jpg">
-          </div>
-        </div>
-      </a>
-
-      <a href="https://amzn.to/2XDbfqa" rel="noopener noreferrer" target="_blank">
-        <div class="contentBox">
-          <div>
-            <span id="028">Portable Handheld Color Scanner</span>
-            <p> 
-              $94.99
-            </p>
-            <p class="prime">✔️ Prime</p>
-
-          </div>
-          <div class="imgContainer">
-            <img src="images/028.jpg">
-          </div>
-        </div>
-      </a>
-
-      <a href="https://amzn.to/3hRcLMa" rel="noopener noreferrer" target="_blank">
-        <div class="contentBox">
-          <div>
-            <span id="029">Typewriter Mechanical Keyboard</span>
-            <p> 
-              $69.99
-            </p>
-            <p class="prime">✔️ Prime</p>
-
-          </div>
-          <div class="imgContainer">
-            <img src="images/029.jpg">
-          </div>
-        </div>
-      </a>
-
-      <a href="https://amzn.to/3tW99x3" rel="noopener noreferrer" target="_blank">
-        <div class="contentBox">
-          <div>
-            <span id="030">BUGANI Bluetooth Speaker</span>
-            <p> 
-              $59.99
-            </p>
-            <p class="prime">✔️ Prime</p>
-
-          </div>
-          <div class="imgContainer">
-            <img src="images/030.jpg">
-          </div>
-        </div>
-      </a>
-
-      <a href="https://amzn.to/3zrMQRh" rel="noopener noreferrer" target="_blank">
-        <div class="contentBox">
-          <div>
-            <span id="031">LARQ Self Cleaning Water Bottle</span>
-            <p> 
-              $95.00
-            </p>
-            <p class="prime"></p>
-
-          </div>
-          <div class="imgContainer">
-            <img src="images/031.jpg">
-          </div>
-        </div>
-      </a>
-
-      <a href="https://amzn.to/3AvmI9a" rel="noopener noreferrer" target="_blank">
-        <div class="contentBox">
-          <div>
-            <span id="032">USB-C Bracelet Charging Cable</span>
-            <p> 
-              $14.99
-            </p>
-            <p class="prime">✔️ Prime</p>
-
-          </div>
-          <div class="imgContainer">
-            <img src="images/032.jpg">
-          </div>
-        </div>
-      </a>
-
-      <a href="https://amzn.to/2Yp5lck" rel="noopener noreferrer" target="_blank">
-        <div class="contentBox">
-          <div>
-            <span id="033">Retro Game Console </span>
-            <p> 
-              $17.99
-            </p>
-            <p class="prime">✔️ Prime</p>
-
-          </div>
-          <div class="imgContainer">
-            <img src="images/033.jpg">
-          </div>
-        </div>
-      </a>
-
-      <a href="https://amzn.to/3uIikBA" rel="noopener noreferrer" target="_blank">
-        <div class="contentBox">
-          <div>
-            <span id="034">LED Bedside Lamp </span>
-            <p> 
-              $19.99
-            </p>
-            <p class="prime">✔️ Prime</p>
-
-          </div>
-          <div class="imgContainer">
-            <img src="images/034.jpg">
-          </div>
-        </div>
-      </a>
-
-      <a href="https://amzn.to/3izwAaW" rel="noopener noreferrer" target="_blank">
-        <div class="contentBox">
-          <div>
-            <span id="035">Anker PowerCore+ Mini Powerbank</span>
-            <p> 
-              $22.39
-            </p>
-            <p class="prime">✔️ Prime</p>
-
-          </div>
-          <div class="imgContainer">
-            <img src="images/035.jpg">
-          </div>
-        </div>
-      </a>
-
-      <a href="https://amzn.to/3mpvqQK" rel="noopener noreferrer" target="_blank">
-        <div class="contentBox">
-          <div>
-            <span id="036">Nanoleaf Shapes Triangles</span>
-            <p> 
-              $179.99
-            </p>
-            <p class="prime">✔️ Prime</p>
-
-          </div>
-          <div class="imgContainer">
-            <img src="images/036.jpg">
-          </div>
-        </div>
-      </a>
-
-      <a href="https://amzn.to/3FhM4ub" rel="noopener noreferrer" target="_blank">
-        <div class="contentBox">
-          <div>
-            <span id="037">PlayStation Classic</span>
-            <p> 
-              $69.95
-            </p>
-            <p class="prime">✔️ Prime</p>
-
-          </div>
-          <div class="imgContainer">
-            <img src="images/037.jpg">
-          </div>
-        </div>
-      </a>
-
-      <a href="https://amzn.to/300i1He" rel="noopener noreferrer" target="_blank">
-        <div class="contentBox">
-          <div>
-            <span id="038">LED Face Mask</span>
-            <p> 
-              $89.00
-            </p>
-            <p class="prime">✔️ Prime</p>
-
-          </div>
-          <div class="imgContainer">
-            <img src="images/038.jpg">
-          </div>
-        </div>
-      </a>
-
-      <a href="https://amzn.to/3iAIIZl" rel="noopener noreferrer" target="_blank">
-        <div class="contentBox">
-          <div>
-            <span id="039">Minecraft Torch Night Light</span>
-            <p> 
-              $21.57
-            </p>
-            <p class="prime"></p>
-
-          </div>
-          <div class="imgContainer">
-            <img src="images/039.jpg">
-          </div>
-        </div>
-      </a>
-
-      <a href="https://amzn.to/3FcAD6S" rel="noopener noreferrer" target="_blank">
-        <div class="contentBox">
-          <div>
-            <span id="040">Oculus Quest 2</span>
-            <p> 
-              $299.00
-            </p>
-            <p class="prime">✔️ Prime</p>
-
-          </div>
-          <div class="imgContainer">
-            <img src="images/040.jpg">
-          </div>
-        </div>
-      </a>
     </div>
 
 
-    <script>
-      function myFunction() {
-        // Declare variables
-        var input, filter, ul, li, a, i, txtValue;
-        input = document.getElementById('myInput');
-        filter = input.value.toUpperCase();
-        ul = document.getElementById("myUL");
-        li = ul.getElementsByTagName('li');
-      
-        // Loop through all list items, and hide those who don't match the search query
-        for (i = 0; i < li.length; i++) {
-          a = li[i].getElementsByTagName("a")[0];
-          txtValue = a.textContent || a.innerText;
-          if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-          } else {
-            li[i].style.display = "none";
-          }
-        }
-        window.location = '#' + '';
-        
-      }
-    </script>
     
 
     <footer>

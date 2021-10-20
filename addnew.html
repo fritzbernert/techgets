@@ -1,0 +1,49 @@
+<div>
+    Select a text file: 
+    <input type="file" id="fileInput">
+</div>
+<pre id="fileDisplayArea"><pre>
+
+<script>
+    window.onload = function() {
+        var fileInput = document.getElementById('fileInput');
+        var fileDisplayArea = document.getElementById('fileDisplayArea');
+
+        fileInput.addEventListener('change', function(e) {
+            var file = fileInput.files[0];
+            var textType = /text.*/;
+
+            if (file.type.match(textType)) {
+                var reader = new FileReader();
+
+                reader.onload = function(e) {
+                    //fileDisplayArea.innerText = reader.result;
+                    formatText(reader.result);
+                }
+
+                reader.readAsText(file);    
+            } else {
+                fileDisplayArea.innerText = "File not supported!"
+            }
+        });
+    }
+
+    function formatText(oldTxt){
+        let newTxt = [];
+
+        let blocks = [];
+        let innerBlocks = [];
+        blocks = oldTxt.split("\n");
+
+        for (let i = 0; i < blocks.length; i++) {
+            blocks[i] = blocks[i].split("-");
+
+            newTxt.push(
+                "\n" + "<a id='" + blocks[i][0] + "' href=" + blocks[i][2] + " rel='noopener noreferrer' target='blank'> <div class='contentBox'> <div> <span>" + blocks[i][1] + "</span> <p> $" + blocks[i][3] + "</p><p class='prime'>" + blocks[i][4] + "</p></div><div class='imgContainer'><img src='images/" + blocks[i][0] + ".jpg'></div></div></a>"
+            );
+
+        }
+        
+        fileDisplayArea.innerText = newTxt;
+    }
+</script>
